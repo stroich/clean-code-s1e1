@@ -12,33 +12,33 @@
       <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <section id="sectionAdding">
+      <section class="sectionAdding">
         <h3 class="sectionAdding-title">Add Item</h3>
-        <div class="wrapperTask">
-          <input class="wrapperTask-input">
-          <button class="wrapperTask-button">Add</button>
+        <div class="addingTask">
+          <input class="addingTask-input" type="text">
+          <button class="addingTask-button">Add</button>
         </div>
       </section>
-      <section id="sectionTodo">
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg" alt="remove"></button>
+      <section class="sectionTodo">
+        <h3 class="sectionTodo-title">Todo</h3>
+        <ul class="tasks" id="incompleteTasks">
+          <li class="task">
+            <input class="task-checkboxInput" type="checkbox">
+            <label class="task-name">Pay Bills</label>
+            <input class="task-textInput" type="text">
+            <button class="task-editButton">Edit</button>
+            <button class="task-deleteButton"><img src="./remove.svg" alt="remove"></button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete"><img src="./remove.svg" alt="remove"></button>
+          <li class="task">
+            <input class="task-checkboxInput" type="checkbox">
+            <label class="task-name">Go Shopping</label>
+            <input class="task-textInput" type="text" value="Go Shopping">
+            <button class="task-saveButton">Save</button>
+            <button class="task-deleteButton"><img src="./remove.svg" alt="remove"></button>
           </li>
         </ul>
       </section>
-      <section id="sectionCompleted">
+      <section class="sectionCompleted">
         <h3>Completed</h3>
         <ul id="completed-tasks">
           <li>
