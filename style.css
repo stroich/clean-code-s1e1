@@ -50,7 +50,10 @@ li {
   display: flex;
 }
 
-.task-deleteButton, .task-editButton, .task-saveButton, .addingTask-button {
+.task-deleteButton,
+.task-editButton,
+.task-saveButton,
+.addingTask-button {
   background: none;
   border: 0px;
   color: #888;
@@ -60,7 +63,10 @@ li {
   cursor: pointer;
 }
 
-.task-deleteButton:hover, .task-editButton:hover, .task-saveButton:hover, .addingTask-button:hover {
+.task-deleteButton:hover,
+.task-editButton:hover,
+.task-saveButton:hover,
+.addingTask-button:hover {
   color: #3a3A3a;
 }
 
@@ -96,7 +102,8 @@ li {
   color: #888;
 }
 
-.addingTask-input:focus, .task-textInputChange:focus {
+.addingTask-input:focus,
+.task-textInputChange:focus {
   color: #333;
   outline: none;
 }
