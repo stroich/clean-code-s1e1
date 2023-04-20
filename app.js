@@ -50,20 +50,31 @@ addButton.addEventListener('click', addTask);
 
 let editTask = function(){
     let listItem=this.parentNode;
-    let editInput=listItem.querySelector('input[type=text]');
-    let label=listItem.querySelector("label");
-    let editBtn=listItem.querySelector(".edit");
-    let containsClass=listItem.classList.contains("editMode");
+    let editInput = listItem.querySelector('.task-textInput');
+    let label = listItem.querySelector('.task-name');
+    let containsClass=listItem.classList.contains("taskChange");
 
     if(containsClass){
+        let editBtn=listItem.querySelector('.task-saveButton');
         label.innerText=editInput.value;
-        editBtn.innerText="Edit";
+        editBtn.innerText='Edit';
+        listItem.classList.toggle('taskChange');
+        label.classList.toggle('task-nameChange');
+        editInput.classList.toggle('task-textInputChange');
+        editBtn.classList.remove('task-saveButton');
+        editBtn.classList.add('task-editButton');
     }else{
+        let editBtn=listItem.querySelector('.task-editButton');
         editInput.value=label.innerText;
         editBtn.innerText="Save";
+        listItem.classList.toggle("taskChange");
+        label.classList.toggle('task-nameChange');
+        editInput.classList.toggle('task-textInputChange');
+        editBtn.classList.add('task-saveButton');
+        editBtn.classList.remove('task-editButton')
     }
 
-    listItem.classList.toggle("editMode");
+
 };
 
 
